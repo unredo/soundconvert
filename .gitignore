@@ -1,0 +1,24 @@
+# dev
+.yarn/
+!.yarn/releases
+.vscode/*
+.zed/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+
+# deps
+node_modules/
+
+# misc
+.DS_Store
+.env
+.env.production
+
+dist/
+build/
+
+*.pem
+cert*

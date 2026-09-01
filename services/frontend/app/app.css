@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'OverpassMono', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+  font-family: 'OverpassMono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/OverpassMono-VariableFont_wght.ttf') format('truetype-variations');
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+
+  --screen-max-width: 1920px;
+}

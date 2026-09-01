@@ -1,0 +1,12 @@
+.*
+**/.*
+**/test/
+**/dist/
+**/build/
+**/Dockerfile*
+**/coverage
+README*
+LICENSE*
+docker*
+docker/
+**/*.tsbuildinfo

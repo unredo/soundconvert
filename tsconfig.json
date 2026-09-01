@@ -1,0 +1,6 @@
+{
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules"]
+  },
+  "references": [{ "path": "./services/mediator" }, { "path": "./services/converter" }]
+}

@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-
+{
+  "name": "soundconvert",
+  "image": "mcr.microsoft.com/devcontainers/javascript-:4-24-trixie",
+  "customizations": {
+    "zed": {
+      "extensions": ["oxc"]
+    },
+    "vscode": {
+      "extensions": ["oxc.oxc-vscode", "docker.docker"]
+    }
+  },
+  "mounts": [
+    //"source=${localWorkspaceFolderBasename}-_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+  "postCreateCommand": {
+    "folder": "sudo chown  node_modules",
+    "npq": "npm install -g npq lockfile-lint",
+    "la": "echo alias la=\\'ls -la\\' >> /home//.bash_aliases"
+    //"npm": "echo alias npm=\\'npq-hero\\' >> /home//.bash_aliases"
+  },
+  "forwardPorts": [9229, 5173, 3000],
+  "containerEnv": {
+    "_OPTIONS": "--disable-proto=delete"
+  },
+  "runArgs": [
+    //"--security-opt=no-new-privileges:true",
+    "--cap-drop=ALL",
+    "--cap-add=CHOWN",
+    "--cap-add=SETUID",
+    "--cap-add=SETGID"
+  ],
+  "workspaceMount": "source=sndcnvrt-vlm,target=/workspace,type=volume",
+  "workspaceFolder": "/workspace/soundconvert"
+  //"workspaceMount": "source=soundconvert-vlm,target=/workspace,type=volume",
+  //"workspaceFolder": "/workspace"
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

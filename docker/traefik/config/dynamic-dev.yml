@@ -1,0 +1,41 @@
+http:
+  routers:
+    routerFrontend:
+      entryPoints:
+        - web
+      middlewares:
+        - limit-middleware
+      service: frontend-service
+      rule: Host(`convert.docker.localhost`)
+    routerWhoami:
+      entryPoints:
+        - web
+      middlewares:
+        - limit-middleware
+      service: whoami-service
+      rule: Host(`whoami.docker.localhost`)
+    routerInternal:
+      entryPoints:
+        - web
+      middlewares:
+        - limit-middleware
+      service: api@internal
+      rule: Host(`proxy.docker.localhost`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+
+  middlewares:
+    limit-middleware:
+      rateLimit:
+        average: 50
+        period: 1s
+        burst: 100
+
+  services:
+    frontend-service:
+      loadBalancer:
+        servers:
+          - url: http://conv-frontend:3000
+    whoami-service:
+      loadBalancer:
+        servers:
+          - url: http://conv-whoami
+        passHostHeader: false

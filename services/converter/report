@@ -1,0 +1,1293 @@
+
+{
+  "header": {
+    "reportVersion": 5,
+    "event": "JavaScript API",
+    "trigger": "API",
+    "filename": "report",
+    "dumpEventTime": "2026-07-24T17:44:34Z",
+    "dumpEventTimeStamp": "1784915074964",
+    "processId": 11768,
+    "threadId": 0,
+    "cwd": "/workspaces/soundconvert/services/converter",
+    "commandLine": [
+      "/usr/local/bin/node",
+      "--require",
+      "/workspaces/soundconvert/node_modules/tsx/dist/preflight.cjs",
+      "--import",
+      "file:///workspaces/soundconvert/node_modules/tsx/dist/loader.mjs",
+      "--inspect=0.0.0.0:9229",
+      "src/index.ts"
+    ],
+    "nodejsVersion": "v24.18.0",
+    "glibcVersionRuntime": "2.41",
+    "glibcVersionCompiler": "2.28",
+    "wordSize": 64,
+    "arch": "arm64",
+    "platform": "linux",
+    "componentVersions": {
+      "acorn": "8.16.0",
+      "ada": "3.4.4",
+      "amaro": "1.1.9",
+      "ares": "1.34.6",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.3",
+      "llhttp": "9.4.2",
+      "merve": "1.2.2",
+      "modules": "137",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.69.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "node": "24.18.0",
+      "openssl": "3.5.7",
+      "simdjson": "4.6.4",
+      "simdutf": "6.4.0",
+      "sqlite": "3.53.1",
+      "tz": "2026b",
+      "undici": "7.28.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "13.6.233.17-node.50",
+      "zlib": "1.3.1-e00f703",
+      "zstd": "1.5.7"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Krypton",
+      "headersUrl": "https://nodejs.org/download/release/v24.18.0/node-v24.18.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v24.18.0/node-v24.18.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "6.8.11-300.fc40.aarch64",
+    "osVersion": "#1 SMP PREEMPT_DYNAMIC Mon May 27 15:22:03 UTC 2024",
+    "osMachine": "aarch64",
+    "cpus": [
+      {
+        "model": "unknown",
+        "speed": 0,
+        "user": 44560,
+        "nice": 10,
+        "sys": 24620,
+        "idle": 2603180,
+        "irq": 9920
+      },
+      {
+        "model": "unknown",
+        "speed": 0,
+        "user": 45190,
+        "nice": 20,
+        "sys": 24470,
+        "idle": 2604740,
+        "irq": 8540
+      },
+      {
+        "model": "unknown",
+        "speed": 0,
+        "user": 45690,
+        "nice": 0,
+        "sys": 24860,
+        "idle": 2603810,
+        "irq": 8650
+      },
+      {
+        "model": "unknown",
+        "speed": 0,
+        "user": 44550,
+        "nice": 10,
+        "sys": 24420,
+        "idle": 2605000,
+        "irq": 8600
+      },
+      {
+        "model": "unknown",
+        "speed": 0,
+        "user": 42660,
+        "nice": 1720,
+        "sys": 24570,
+        "idle": 2605870,
+        "irq": 8230
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "5e:04:c8:0f:c7:b8",
+        "address": "10.88.0.3",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "5e:04:c8:0f:c7:b8",
+        "address": "fe80::5c04:c8ff:fe0f:c7b8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "428ee993b291"
+  },
+  "javascriptStack": {
+    "message": "Error [ERR_SYNTHETIC]: JavaScript Callstack",
+    "stack": [
+      "at Object.writeReport (node:internal/process/report:43:13)",
+      "at upload (/workspaces/soundconvert/services/converter/src/lib/upload.ts:19:32)",
+      "at process.processTicksAndRejections (node:internal/process/task_queues:104:5)",
+      "at async Worker.Worker.connection.connection (/workspaces/soundconvert/services/converter/src/index.ts:64:5)"
+    ],
+    "errorProperties": {
+      "code": "ERR_SYNTHETIC"
+    }
+  },
+  "javascriptHeap": {
+    "totalMemory": 65925120,
+    "executableMemory": 2539520,
+    "totalCommittedMemory": 63098880,
+    "availableMemory": 1091936480,
+    "totalGlobalHandlesMemory": 61512,
+    "usedGlobalHandlesMemory": 50240,
+    "usedMemory": 31031256,
+    "memoryLimit": 1123024896,
+    "mallocedMemory": 696440,
+    "externalMemory": 39141423,
+    "peakMallocedMemory": 44307208,
+    "nativeContextCount": 2,
+    "detachedContextCount": 0,
+    "doesZapGarbage": 0,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 30457856,
+        "capacity": 16776192,
+        "used": 1995352,
+        "available": 14780840
+      },
+      "old_space": {
+        "memorySize": 22900736,
+        "committedMemory": 23068672,
+        "capacity": 22887992,
+        "used": 20684968,
+        "available": 2203024
+      },
+      "code_space": {
+        "memorySize": 2359296,
+        "committedMemory": 2359296,
+        "capacity": 2359008,
+        "used": 1921024,
+        "available": 437984
+      },
+      "shared_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "trusted_space": {
+        "memorySize": 3567616,
+        "committedMemory": 3670016,
+        "capacity": 3566872,
+        "used": 2929232,
+        "available": 637640
+      },
+      "shared_trusted_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16777216,
+        "used": 0,
+        "available": 16777216
+      },
+      "large_object_space": {
+        "memorySize": 3362816,
+        "committedMemory": 3362816,
+        "capacity": 3323880,
+        "used": 3323880,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 180224,
+        "committedMemory": 180224,
+        "capacity": 176800,
+        "used": 176800,
+        "available": 0
+      },
+      "shared_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "shared_trusted_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "trusted_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000000009ab1a4",
+      "symbol": "node::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, v8::Local<v8::Value>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000009ab7bc",
+      "symbol": "node::TriggerNodeReport(node::Environment*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, v8::Local<v8::Value>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000009af8ac",
+      "symbol": "node::report::WriteReport(v8::FunctionCallbackInfo<v8::Value> const&) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000018af918",
+      "symbol": " [/usr/local/bin/node]"
+    }
+  ],
+  "resourceUsage": {
+    "free_memory": 91062272,
+    "total_memory": 2044350464,
+    "rss": 195846144,
+    "constrained_memory": 18446744073709551615,
+    "available_memory": 91062272,
+    "userCpuSeconds": 0.998268,
+    "kernelCpuSeconds": 0.194923,
+    "cpuConsumptionPercent": 13.2577,
+    "userCpuConsumptionPercent": 11.0919,
+    "kernelCpuConsumptionPercent": 2.16581,
+    "maxRss": 195846144,
+    "pageFaults": {
+      "IORequired": 823,
+      "IONotRequired": 71933
+    },
+    "fsActivity": {
+      "reads": 200730,
+      "writes": 2296
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 0.453239,
+    "kernelCpuSeconds": 0.122257,
+    "cpuConsumptionPercent": 6.3944,
+    "userCpuConsumptionPercent": 5.03599,
+    "kernelCpuConsumptionPercent": 1.35841,
+    "fsActivity": {
+      "reads": 176800,
+      "writes": 0
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000444a10e0"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000006535b28"
+    },
+    {
+      "type": "timer",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x0000000044556eb8",
+      "repeat": 0,
+      "firesInMsFromNow": 492,
+      "expired": false
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000044556f50"
+    },
+    {
+      "type": "idle",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x0000000044556fc8"
+    },
+    {
+      "type": "prepare",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000044557040"
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000445570b8"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000044557130"
+    },
+    {
+      "type": "pipe",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000004459a010",
+      "localEndpoint": null,
+      "remoteEndpoint": "/tmp/tsx-1000/11476.pipe",
+      "sendBufferSize": 212992,
+      "recvBufferSize": 212992,
+      "fd": 24,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x000000004453a050",
+      "width": 152,
+      "height": 23,
+      "fd": 25,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000004458feb8",
+      "signum": 28,
+      "signal": "SIGWINCH"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x0000000044539850",
+      "width": 152,
+      "height": 23,
+      "fd": 26,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "pipe",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000044539c00",
+      "localEndpoint": null,
+      "remoteEndpoint": "/tmp/tsx-1000/11476.pipe",
+      "sendBufferSize": 212992,
+      "recvBufferSize": 212992,
+      "fd": 27,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x000000004461ec50",
+      "width": 152,
+      "height": 23,
+      "fd": 28,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000445c5f08"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000446b5218"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000044618b18"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000446f2728"
+    },
+    {
+      "type": "tcp",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x00000000445444f0",
+      "localEndpoint": {
+        "host": "428ee993b291",
+        "ip4": "10.88.0.3",
+        "port": 33124
+      },
+      "remoteEndpoint": {
+        "host": "192.168.127.254",
+        "ip4": "192.168.127.254",
+        "port": 6379
+      },
+      "sendBufferSize": 168960,
+      "recvBufferSize": 131072,
+      "fd": 37,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "tcp",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x00000000445ac140",
+      "localEndpoint": {
+        "host": "428ee993b291",
+        "ip4": "10.88.0.3",
+        "port": 33114
+      },
+      "remoteEndpoint": {
+        "host": "192.168.127.254",
+        "ip4": "192.168.127.254",
+        "port": 6379
+      },
+      "sendBufferSize": 168960,
+      "recvBufferSize": 131072,
+      "fd": 35,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000447af958",
+      "signum": 2,
+      "signal": "SIGINT"
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000445aa3c8",
+      "signum": 15,
+      "signal": "SIGTERM"
+    },
+    {
+      "type": "tcp",
+      "is_active": true,
+      "is_referenced": true,
+      "address": "0x00000000447795f0",
+      "localEndpoint": {
+        "host": "localhost",
+        "ip6": "::1",
+        "port": 39432
+      },
+      "remoteEndpoint": {
+        "host": "localhost",
+        "ip6": "::1",
+        "port": 3000
+      },
+      "sendBufferSize": 2626560,
+      "recvBufferSize": 6291456,
+      "fd": 38,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "timer",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000004515a810",
+      "repeat": 0,
+      "firesInMsFromNow": 7397,
+      "expired": false
+    },
+    {
+      "type": "timer",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000004487fd60",
+      "repeat": 0,
+      "firesInMsFromNow": 21,
+      "expired": false
+    },
+    {
+      "type": "loop",
+      "is_active": true,
+      "address": "0x0000000006544c30",
+      "loopIdleTimeSeconds": 8.4603
+    }
+  ],
+  "workers": [
+        
+    {
+      "header": {
+        "reportVersion": 5,
+        "event": "Worker thread subreport [WorkerThread]",
+        "trigger": "API",
+        "filename": null,
+        "dumpEventTime": "2026-07-24T17:44:34Z",
+        "dumpEventTimeStamp": "1784915074970",
+        "processId": 11768,
+        "threadId": 1,
+        "cwd": "/workspaces/soundconvert/services/converter",
+        "commandLine": [
+          "/usr/local/bin/node",
+          "--require",
+          "/workspaces/soundconvert/node_modules/tsx/dist/preflight.cjs",
+          "--import",
+          "file:///workspaces/soundconvert/node_modules/tsx/dist/loader.mjs",
+          "--inspect=0.0.0.0:9229",
+          "src/index.ts"
+        ],
+        "nodejsVersion": "v24.18.0",
+        "glibcVersionRuntime": "2.41",
+        "glibcVersionCompiler": "2.28",
+        "wordSize": 64,
+        "arch": "arm64",
+        "platform": "linux",
+        "componentVersions": {
+          "acorn": "8.16.0",
+          "ada": "3.4.4",
+          "amaro": "1.1.9",
+          "ares": "1.34.6",
+          "brotli": "1.2.0",
+          "cldr": "48.0",
+          "icu": "78.3",
+          "llhttp": "9.4.2",
+          "merve": "1.2.2",
+          "modules": "137",
+          "napi": "10",
+          "nbytes": "0.1.4",
+          "ncrypto": "0.0.1",
+          "nghttp2": "1.69.0",
+          "nghttp3": "",
+          "ngtcp2": "",
+          "node": "24.18.0",
+          "openssl": "3.5.7",
+          "simdjson": "4.6.4",
+          "simdutf": "6.4.0",
+          "sqlite": "3.53.1",
+          "tz": "2026b",
+          "undici": "7.28.0",
+          "unicode": "17.0",
+          "uv": "1.52.1",
+          "uvwasi": "0.0.23",
+          "v8": "13.6.233.17-node.50",
+          "zlib": "1.3.1-e00f703",
+          "zstd": "1.5.7"
+        },
+        "release": {
+          "name": "node",
+          "lts": "Krypton",
+          "headersUrl": "https://nodejs.org/download/release/v24.18.0/node-v24.18.0-headers.tar.gz",
+          "sourceUrl": "https://nodejs.org/download/release/v24.18.0/node-v24.18.0.tar.gz"
+        },
+        "osName": "Linux",
+        "osRelease": "6.8.11-300.fc40.aarch64",
+        "osVersion": "#1 SMP PREEMPT_DYNAMIC Mon May 27 15:22:03 UTC 2024",
+        "osMachine": "aarch64",
+        "cpus": [
+          {
+            "model": "unknown",
+            "speed": 0,
+            "user": 44560,
+            "nice": 10,
+            "sys": 24620,
+            "idle": 2603190,
+            "irq": 9920
+          },
+          {
+            "model": "unknown",
+            "speed": 0,
+            "user": 45190,
+            "nice": 20,
+            "sys": 24470,
+            "idle": 2604750,
+            "irq": 8540
+          },
+          {
+            "model": "unknown",
+            "speed": 0,
+            "user": 45690,
+            "nice": 0,
+            "sys": 24860,
+            "idle": 2603820,
+            "irq": 8650
+          },
+          {
+            "model": "unknown",
+            "speed": 0,
+            "user": 44550,
+            "nice": 10,
+            "sys": 24420,
+            "idle": 2605010,
+            "irq": 8600
+          },
+          {
+            "model": "unknown",
+            "speed": 0,
+            "user": 42670,
+            "nice": 1720,
+            "sys": 24570,
+            "idle": 2605880,
+            "irq": 8230
+          }
+        ],
+        "networkInterfaces": [
+          {
+            "name": "lo",
+            "internal": true,
+            "mac": "00:00:00:00:00:00",
+            "address": "127.0.0.1",
+            "netmask": "255.0.0.0",
+            "family": "IPv4"
+          },
+          {
+            "name": "eth0",
+            "internal": false,
+            "mac": "5e:04:c8:0f:c7:b8",
+            "address": "10.88.0.3",
+            "netmask": "255.255.0.0",
+            "family": "IPv4"
+          },
+          {
+            "name": "lo",
+            "internal": true,
+            "mac": "00:00:00:00:00:00",
+            "address": "::1",
+            "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+            "family": "IPv6",
+            "scopeid": 0
+          },
+          {
+            "name": "eth0",
+            "internal": false,
+            "mac": "5e:04:c8:0f:c7:b8",
+            "address": "fe80::5c04:c8ff:fe0f:c7b8",
+            "netmask": "ffff:ffff:ffff:ffff::",
+            "family": "IPv6",
+            "scopeid": 2
+          }
+        ],
+        "host": "428ee993b291"
+      },
+      "javascriptStack": {
+        "message": "No stack.",
+        "stack": [
+          "Unavailable."
+        ],
+        "errorProperties": {
+        }
+      },
+      "javascriptHeap": {
+        "totalMemory": 12054528,
+        "executableMemory": 524288,
+        "totalCommittedMemory": 11292672,
+        "availableMemory": 1115328096,
+        "totalGlobalHandlesMemory": 8192,
+        "usedGlobalHandlesMemory": 2784,
+        "usedMemory": 7686928,
+        "memoryLimit": 1123024896,
+        "mallocedMemory": 442496,
+        "externalMemory": 3426299,
+        "peakMallocedMemory": 40003456,
+        "nativeContextCount": 1,
+        "detachedContextCount": 0,
+        "doesZapGarbage": 0,
+        "heapSpaces": {
+          "read_only_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "new_space": {
+            "memorySize": 4194304,
+            "committedMemory": 3162112,
+            "capacity": 2097024,
+            "used": 875496,
+            "available": 1221528
+          },
+          "old_space": {
+            "memorySize": 5074944,
+            "committedMemory": 5242880,
+            "capacity": 5071976,
+            "used": 4631904,
+            "available": 440072
+          },
+          "code_space": {
+            "memorySize": 524288,
+            "committedMemory": 524288,
+            "capacity": 524224,
+            "used": 176192,
+            "available": 348032
+          },
+          "shared_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "trusted_space": {
+            "memorySize": 1994752,
+            "committedMemory": 2097152,
+            "capacity": 1992120,
+            "used": 1741176,
+            "available": 250944
+          },
+          "shared_trusted_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "new_large_object_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 2097152,
+            "used": 0,
+            "available": 2097152
+          },
+          "large_object_space": {
+            "memorySize": 266240,
+            "committedMemory": 266240,
+            "capacity": 262160,
+            "used": 262160,
+            "available": 0
+          },
+          "code_large_object_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "shared_large_object_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "shared_trusted_large_object_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          },
+          "trusted_large_object_space": {
+            "memorySize": 0,
+            "committedMemory": 0,
+            "capacity": 0,
+            "used": 0,
+            "available": 0
+          }
+        }
+      },
+      "nativeStack": [
+        {
+          "pc": "0x00000000009abb18",
+          "symbol": "node::GetNodeReport(node::Environment*, char const*, char const*, v8::Local<v8::Value>, std::ostream&) [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x00000000009abdcc",
+          "symbol": " [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x000000000084afb0",
+          "symbol": "node::Environment::RunAndClearInterrupts() [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x000000000084b0d4",
+          "symbol": "node::Environment::RunAndClearNativeImmediates(bool) [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x000000000084bb0c",
+          "symbol": " [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x0000000001888980",
+          "symbol": " [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x000000000189e4cc",
+          "symbol": " [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x0000000001889cbc",
+          "symbol": "uv_run [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x00000000007e15e0",
+          "symbol": "node::SpinEventLoopInternal(node::Environment*) [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x0000000000a47008",
+          "symbol": "node::worker::Worker::Run() [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x0000000000a47268",
+          "symbol": " [/usr/local/bin/node]"
+        },
+        {
+          "pc": "0x0000ffff88e55f38",
+          "symbol": " [/lib/aarch64-linux-gnu/libc.so.6]"
+        },
+        {
+          "pc": "0x0000ffff88ebde9c",
+          "symbol": " [/lib/aarch64-linux-gnu/libc.so.6]"
+        }
+      ],
+      "resourceUsage": {
+        "free_memory": 90488832,
+        "total_memory": 2044350464,
+        "rss": 196796416,
+        "constrained_memory": 18446744073709551615,
+        "available_memory": 90488832,
+        "userCpuSeconds": 0.999989,
+        "kernelCpuSeconds": 0.196848,
+        "cpuConsumptionPercent": 13.2982,
+        "userCpuConsumptionPercent": 11.111,
+        "kernelCpuConsumptionPercent": 2.1872,
+        "maxRss": 196796416,
+        "pageFaults": {
+          "IORequired": 832,
+          "IONotRequired": 71983
+        },
+        "fsActivity": {
+          "reads": 202714,
+          "writes": 2296
+        }
+      },
+      "uvthreadResourceUsage": {
+        "userCpuSeconds": 0.027413,
+        "kernelCpuSeconds": 0.007675,
+        "cpuConsumptionPercent": 0.389867,
+        "userCpuConsumptionPercent": 0.304589,
+        "kernelCpuConsumptionPercent": 0.0852778,
+        "fsActivity": {
+          "reads": 2496,
+          "writes": 0
+        }
+      },
+      "libuv": [
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff340c5280"
+        },
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341d1628"
+        },
+        {
+          "type": "timer",
+          "is_active": false,
+          "is_referenced": false,
+          "address": "0x0000ffff34145448",
+          "repeat": 0,
+          "firesInMsFromNow": -2690727,
+          "expired": true
+        },
+        {
+          "type": "check",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341454e0"
+        },
+        {
+          "type": "idle",
+          "is_active": false,
+          "is_referenced": true,
+          "address": "0x0000ffff34145558"
+        },
+        {
+          "type": "prepare",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341455d0"
+        },
+        {
+          "type": "check",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff34145648"
+        },
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341456c0"
+        },
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341d4468"
+        },
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": true,
+          "address": "0x0000ffff341d21e8"
+        },
+        {
+          "type": "async",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff341d22f8"
+        },
+        {
+          "type": "pipe",
+          "is_active": false,
+          "is_referenced": false,
+          "address": "0x0000ffff3417ded0",
+          "localEndpoint": null,
+          "remoteEndpoint": null,
+          "sendBufferSize": 131072,
+          "recvBufferSize": 131072,
+          "fd": 34,
+          "writeQueueSize": 0,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "type": "pipe",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff34229970",
+          "localEndpoint": null,
+          "remoteEndpoint": null,
+          "sendBufferSize": 131072,
+          "recvBufferSize": 131072,
+          "fd": 36,
+          "writeQueueSize": 0,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "type": "process",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff34187ee8",
+          "pid": 11779
+        },
+        {
+          "type": "timer",
+          "is_active": true,
+          "is_referenced": false,
+          "address": "0x0000ffff34229370",
+          "repeat": 0,
+          "firesInMsFromNow": 7244,
+          "expired": false
+        },
+        {
+          "type": "loop",
+          "is_active": true,
+          "address": "0x0000ffff5880e378",
+          "loopIdleTimeSeconds": 8.9357
+        }
+      ],
+      "workers": [
+      ],
+      "environmentVariables": {
+        "USER": "node",
+        "npm_config_user_agent": "npm/11.16.0 node/v24.18.0 linux arm64 workspaces/true",
+        "GIT_EDITOR": "code --wait",
+        "NODE_VERSION": "24.18.0",
+        "YARN_VERSION": "1.22.22",
+        "GIT_ASKPASS": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh",
+        "npm_node_execpath": "/usr/local/bin/node",
+        "SHLVL": "2",
+        "BROWSER": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/helpers/browser.sh",
+        "npm_config_noproxy": "",
+        "HOME": "/home/node",
+        "TERM_PROGRAM_VERSION": "1.130.0",
+        "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-ae3a6d35-bc40-4837-88e0-464c23409f99.sock",
+        "npm_package_json": "/workspaces/soundconvert/services/converter/package.json",
+        "NVM_SYMLINK_CURRENT": "true",
+        "VSCODE_GIT_ASKPASS_MAIN": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js",
+        "VSCODE_GIT_ASKPASS_NODE": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node",
+        "npm_config_userconfig": "/home/node/.npmrc",
+        "npm_config_local_prefix": "/workspaces/soundconvert",
+        "VSCODE_PYTHON_AUTOACTIVATE_GUARD": "1",
+        "COLORTERM": "truecolor",
+        "container": "podman",
+        "REMOTE_CONTAINERS": "true",
+        "npm_config_allow_git": "none",
+        "COLOR": "1",
+        "NVM_DIR": "/usr/local/share/nvm",
+        "REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock",
+        "_": "/usr/local/bin/npm",
+        "npm_config_prefix": "/usr/local/share/npm-global",
+        "npm_config_npm_version": "11.16.0",
+        "PROMPT_DIRTRIM": "4",
+        "TERM": "xterm-256color",
+        "npm_config_cache": "/home/node/.npm",
+        "npm_config_ignore_scripts": "true",
+        "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+        "PATH": "/workspaces/soundconvert/services/converter/node_modules/.bin:/workspaces/soundconvert/services/node_modules/.bin:/workspaces/soundconvert/node_modules/.bin:/workspaces/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin",
+        "NODE": "/usr/local/bin/node",
+        "npm_package_name": "converter",
+        "REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock\"]",
+        "LANG": "en_US.UTF-8",
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:",
+        "VSCODE_GIT_IPC_HANDLE": "/tmp/vscode-git-3decdb0fc6.sock",
+        "TERM_PROGRAM": "vscode",
+        "npm_lifecycle_script": "tsx watch --inspect=0.0.0.0:9229 src/index.ts",
+        "SSH_AUTH_SOCK": "/tmp/vscode-ssh-auth-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock",
+        "SHELL": "/bin/bash",
+        "npm_package_version": "1.0.0",
+        "npm_lifecycle_event": "debug",
+        "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+        "npm_config_globalconfig": "/usr/local/share/npm-global/etc/npmrc",
+        "npm_config_init_module": "/home/node/.npm-init.js",
+        "PWD": "/workspaces/soundconvert/services/converter",
+        "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+        "NVM_CD_FLAGS": "",
+        "npm_config_global_prefix": "/usr/local/share/npm-global",
+        "npm_config_allow_scripts": "",
+        "npm_command": "run",
+        "INIT_CWD": "/workspaces/soundconvert",
+        "EDITOR": "vi"
+      },
+      "userLimits": {
+        "core_file_size_blocks": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        },
+        "data_seg_size_bytes": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        },
+        "file_size_blocks": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        },
+        "max_locked_memory_bytes": {
+          "soft": 8388608,
+          "hard": 8388608
+        },
+        "max_memory_size_bytes": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        },
+        "open_files": {
+          "soft": 524288,
+          "hard": 524288
+        },
+        "stack_size_bytes": {
+          "soft": 8388608,
+          "hard": "unlimited"
+        },
+        "cpu_time_seconds": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        },
+        "max_user_processes": {
+          "soft": 7194,
+          "hard": 7194
+        },
+        "virtual_memory_bytes": {
+          "soft": "unlimited",
+          "hard": "unlimited"
+        }
+      },
+      "sharedObjects": [
+        "linux-vdso.so.1",
+        "/lib/aarch64-linux-gnu/libdl.so.2",
+        "/lib/aarch64-linux-gnu/libstdc++.so.6",
+        "/lib/aarch64-linux-gnu/libm.so.6",
+        "/lib/aarch64-linux-gnu/libgcc_s.so.1",
+        "/lib/aarch64-linux-gnu/libpthread.so.0",
+        "/lib/aarch64-linux-gnu/libc.so.6",
+        "/lib/ld-linux-aarch64.so.1",
+        "/workspaces/soundconvert/node_modules/@seydx/node-av-linux-arm64/node-av.node",
+        "/lib/aarch64-linux-gnu/librt.so.1"
+      ]
+    }
+    
+  ],
+  "environmentVariables": {
+    "USER": "node",
+    "npm_config_user_agent": "npm/11.16.0 node/v24.18.0 linux arm64 workspaces/true",
+    "GIT_EDITOR": "code --wait",
+    "NODE_VERSION": "24.18.0",
+    "YARN_VERSION": "1.22.22",
+    "GIT_ASKPASS": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh",
+    "npm_node_execpath": "/usr/local/bin/node",
+    "SHLVL": "2",
+    "BROWSER": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/helpers/browser.sh",
+    "npm_config_noproxy": "",
+    "HOME": "/home/node",
+    "TERM_PROGRAM_VERSION": "1.130.0",
+    "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-ae3a6d35-bc40-4837-88e0-464c23409f99.sock",
+    "npm_package_json": "/workspaces/soundconvert/services/converter/package.json",
+    "NVM_SYMLINK_CURRENT": "true",
+    "VSCODE_GIT_ASKPASS_MAIN": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node",
+    "npm_config_userconfig": "/home/node/.npmrc",
+    "npm_config_local_prefix": "/workspaces/soundconvert",
+    "VSCODE_PYTHON_AUTOACTIVATE_GUARD": "1",
+    "COLORTERM": "truecolor",
+    "container": "podman",
+    "REMOTE_CONTAINERS": "true",
+    "npm_config_allow_git": "none",
+    "COLOR": "1",
+    "NVM_DIR": "/usr/local/share/nvm",
+    "REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock",
+    "_": "/usr/local/bin/npm",
+    "npm_config_prefix": "/usr/local/share/npm-global",
+    "npm_config_npm_version": "11.16.0",
+    "PROMPT_DIRTRIM": "4",
+    "TERM": "xterm-256color",
+    "npm_config_cache": "/home/node/.npm",
+    "npm_config_ignore_scripts": "true",
+    "npm_config_node_gyp": "/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/workspaces/soundconvert/services/converter/node_modules/.bin:/workspaces/soundconvert/services/node_modules/.bin:/workspaces/soundconvert/node_modules/.bin:/workspaces/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/vscode/vscode-server/bin/linux-arm64/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin",
+    "NODE": "/usr/local/bin/node",
+    "npm_package_name": "converter",
+    "REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock\"]",
+    "LANG": "en_US.UTF-8",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:",
+    "VSCODE_GIT_IPC_HANDLE": "/tmp/vscode-git-3decdb0fc6.sock",
+    "TERM_PROGRAM": "vscode",
+    "npm_lifecycle_script": "tsx watch --inspect=0.0.0.0:9229 src/index.ts",
+    "SSH_AUTH_SOCK": "/tmp/vscode-ssh-auth-ddc1e5ff-ddbd-4278-8388-c9680a39f229.sock",
+    "SHELL": "/bin/bash",
+    "npm_package_version": "1.0.0",
+    "npm_lifecycle_event": "debug",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+    "npm_config_globalconfig": "/usr/local/share/npm-global/etc/npmrc",
+    "npm_config_init_module": "/home/node/.npm-init.js",
+    "PWD": "/workspaces/soundconvert/services/converter",
+    "npm_execpath": "/usr/local/lib/node_modules/npm/bin/npm-cli.js",
+    "NVM_CD_FLAGS": "",
+    "npm_config_global_prefix": "/usr/local/share/npm-global",
+    "npm_config_allow_scripts": "",
+    "npm_command": "run",
+    "INIT_CWD": "/workspaces/soundconvert",
+    "EDITOR": "vi"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 8388608,
+      "hard": 8388608
+    },
+    "max_memory_size_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 524288,
+      "hard": 524288
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7194,
+      "hard": 7194
+    },
+    "virtual_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/aarch64-linux-gnu/libdl.so.2",
+    "/lib/aarch64-linux-gnu/libstdc++.so.6",
+    "/lib/aarch64-linux-gnu/libm.so.6",
+    "/lib/aarch64-linux-gnu/libgcc_s.so.1",
+    "/lib/aarch64-linux-gnu/libpthread.so.0",
+    "/lib/aarch64-linux-gnu/libc.so.6",
+    "/lib/ld-linux-aarch64.so.1",
+    "/workspaces/soundconvert/node_modules/@seydx/node-av-linux-arm64/node-av.node",
+    "/lib/aarch64-linux-gnu/librt.so.1"
+  ]
+}

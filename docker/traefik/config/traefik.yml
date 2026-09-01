@@ -1,0 +1,45 @@
+global:
+  checkNewVersion: true
+  sendAnonymousUsage: false
+
+providers:
+  file:
+    directory: '/etc/traefik'
+    filename: 'dynamic.yml'
+
+entryPoints:
+  web:
+    address: ':80'
+    transport:
+      respondingTimeouts:
+        readTimeout: 10m
+    http:
+      encodedCharacters:
+        allowEncodedSlash: false
+        allowEncodedBackSlash: false
+        allowEncodedNullCharacter: false
+        allowEncodedSemicolon: false
+        allowEncodedPercent: false
+        allowEncodedQuestionMark: false
+        allowEncodedHash: false
+
+api:
+  insecure: false
+  dashboard: true
+  disabledashboardad: true
+
+log:
+  level: DEBUG
+
+accessLog: {}
+
+ping: {}
+
+# metrics:
+#   prometheus:
+#     buckets:
+#       - 0.1
+#       - 0.3
+#       - 1.2
+#       - 5.0
+#     entryPoint: traefik
