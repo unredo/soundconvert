@@ -1,19 +1,14 @@
 import { useEffect, useState } from 'react'
 import { useRevalidator } from 'react-router'
 
-import type { JobInfo } from '~/state/job-data.type'
-import { JobsProvider } from '~/state/jobs-context'
-
+import type { JobInfo } from '../../state/job-data.type'
+import { getJobs } from '../../state/jobs-context'
 import JobCheck from './job-check'
 
-export default function JobsData({ jobs, pagination, count }: JobInfo) {
-  const [date, setDate] = useState(Date.now())
+export default function JobsData({ pagination, count }: Pick<JobInfo, 'pagination' | 'count'>) {
   const [hasNew, setHasNew] = useState(false)
   const { revalidate } = useRevalidator()
-
-  useEffect(() => {
-    setDate(Date.now())
-  }, [jobs])
+  const jobs = getJobs()
 
   useEffect(() => {
     const controller = new AbortController()
@@ -35,7 +30,6 @@ export default function JobsData({ jobs, pagination, count }: JobInfo) {
         for (const event of chunk.split('\n\n')) {
           if (event.startsWith('data: ')) {
             const items: { id: string; type: string }[] = JSON.parse(event.slice(6))
-
             const jobIds = jobs.map((j) => j.id)
             const newItems = items.filter((i) => i.type === 'new').length > 0
             const deletedItems =
@@ -64,24 +58,23 @@ export default function JobsData({ jobs, pagination, count }: JobInfo) {
     return () => {
       controller.abort('Left job page')
     }
-  }, [])
+  }, [jobs])
 
   return (
-    <JobsProvider key={date} initialJobs={jobs || []}>
-      <div className="w-full flex flex-col">
-        <JobCheck pagination={pagination} count={count} />
-        {hasNew && (
-          <button
-            className="absolute bottom-0 left-1/2 p-2 text-[3rem] transition-opacity"
-            onClick={async () => {
-              setHasNew(false)
-              await revalidate()
-            }}
-          >
-            {'\u27F3'}
-          </button>
-        )}
-      </div>
-    </JobsProvider>
+    <div className="w-full flex flex-col relative">
+      <JobCheck pagination={pagination} count={count} />
+      {hasNew && (
+        <button
+          title="Reload Jobs"
+          className="absolute h-12 w-12 bottom-4 left-[calc(50%-1.5rem)] p-2 text-[3rem] transition-opacity hover:cursor-pointer rounded-full bg-purple-900 hover:bg-purple-800 leading-0 pr-1 pt-2"
+          onClick={async () => {
+            setHasNew(false)
+            await revalidate()
+          }}
+        >
+          {'\u27F3'}
+        </button>
+      )}
+    </div>
   )
 }

@@ -7,12 +7,13 @@ import { JobAction } from '../../../app/components/jobs/job-action'
 
 describe('JobAction', () => {
   const text = 'Some text to show'
+  const title = 'Some title'
   const url = 'http://localhost:12345/some/path'
 
   const renderCmp = (text: string, url: string, cb?: () => void) =>
     render(
       <BrowserRouter>
-        <JobAction text={text} url={url} cb={cb} />
+        <JobAction text={text} title={title} url={url} cb={cb} />
       </BrowserRouter>,
     )
 
@@ -23,6 +24,7 @@ describe('JobAction', () => {
     const buttons = container.querySelectorAll('button')
 
     expect(links.length).toBe(1)
+    expect(links[0].title).toBe(title)
     expect(links[0].textContent).toBe(text)
     expect(links[0].getAttribute('href')).toBe(url)
     expect(buttons.length).toBe(0)
@@ -40,5 +42,6 @@ describe('JobAction', () => {
     expect(links.length).toBe(0)
     expect(buttons.length).toBe(1)
     expect(buttons[0].textContent).toBe(text)
+    expect(buttons[0].title).toBe(title)
   })
 })

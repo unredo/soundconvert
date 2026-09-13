@@ -10,7 +10,7 @@ interface JobActionProps {
 export function JobAction({ url, text, title, cb }: JobActionProps) {
   const hasCallback = !!cb
   const classes =
-    'text-2xl w-16 text-center rounded-full bg-purple-900 p-4 hover:bg-purple-800 hover:text-grey-100 transition:colors duration-300'
+    'text-2xl w-16 text-center rounded-full bg-purple-900 p-4 hover:bg-purple-800 hover:text-grey-100 hover:cursor-pointer transition:colors duration-300'
 
   return (
     <>

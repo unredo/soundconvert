@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Await, redirect } from 'react-router'
 
 import JobsData from '~/components/jobs/jobs-data'
+import { JobsProvider } from '~/state/jobs-context'
 
 import type { Route } from '../+types/root'
 import { Spinner } from '../components/home/spinner'
@@ -35,6 +36,12 @@ export async function loader({ url }: Route.LoaderArgs): Promise<{ data: any }> 
 
 export default function JobsRoute({ loaderData }: Route.ComponentProps) {
   const { data } = loaderData as unknown as { data: Promise<JobInfo> }
+  const [date, setDate] = useState(0)
+
+  useEffect(() => {
+    setDate(Date.now())
+  }, [data])
+
   return (
     <React.Suspense
       fallback={
@@ -45,7 +52,9 @@ export default function JobsRoute({ loaderData }: Route.ComponentProps) {
     >
       <Await resolve={data}>
         {(value) => (
-          <JobsData count={value.count} jobs={value.jobs} pagination={value.pagination} />
+          <JobsProvider key={date} initialJobs={value.jobs || []}>
+            <JobsData count={value.count} pagination={value.pagination} />
+          </JobsProvider>
         )}
       </Await>
     </React.Suspense>

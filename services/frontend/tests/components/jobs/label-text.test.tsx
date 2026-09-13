@@ -6,7 +6,8 @@ import LabelText from '../../../app/components/jobs/label-text'
 describe('LabelText', () => {
   const label = 'some label'
   const text = 'some text'
-  test('', async () => {
+
+  test('layout', async () => {
     const { container } = render(<LabelText label={label} text={text} />)
 
     const lbl = await findByText(container, `${label}:`)
