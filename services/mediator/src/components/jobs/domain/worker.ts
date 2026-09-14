@@ -10,7 +10,7 @@ import { connection } from '../data/env.js'
 import type { CleanupJobData } from '../data/queueCleanup.js'
 import { getFlowJob, type FlowJobData } from '../data/queueFlow.js'
 import { createArchive } from './archive.js'
-import { deleteOldEvents } from './updates.js'
+import { addEvent, deleteOldEvents } from './updates.js'
 
 const workers: Worker[] = []
 
@@ -64,6 +64,7 @@ function createCleanupWorker(logger: FastifyBaseLogger) {
         logger.warn(`Cleanup: missing job [${flowJobId}]`)
       } else {
         await flowJob?.updateData({ ...flowJob.data, cleanup: true })
+        addEvent({ id: flowJob.id!, type: 'change', timestamp: Date.now() })
       }
 
       try {
